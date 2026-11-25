@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7c843">
+  <title>Pikaiou Cards — Cartes illustrées</title>
+  <meta name="description" content="Découvrez et achetez des cartes illustrées Pikaiou en éditions limitées.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="promo"><span>Livraison offerte dès 35 €</span><span class="promo-dot">●</span><span>Nouvelles cartes chaque mois</span></div>
+
+  <header class="header">
+    <a class="brand" href="#" aria-label="Accueil Pikaiou Cards">
+      <span class="brand-mark"><span>⚡</span></span>
+      <span><strong>PIKAIOU</strong><small>CARDS</small></span>
+    </a>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="active" href="#collection">Boutique</a>
+      <a href="#histoire">Notre histoire</a>
+    </nav>
+
+    <button class="cart-button" id="cartButton" aria-label="Ouvrir le panier">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.1a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L20.4 7H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+      <span>Panier</span>
+      <b id="cartCount">0</b>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">ÉDITIONS ORIGINALES</p>
+        <h1>Attrapez la carte qui vous <em>électrise.</em></h1>
+        <p class="hero-text">Des créations illustrées, imprimées en petites séries pour les collectionneurs et les passionnés.</p>
+        <a class="primary-button" href="#collection">Voir la collection <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-label="Illustration de carte Pikaiou">
+        <div class="bolt bolt-one">⚡</div>
+        <div class="bolt bolt-two">⚡</div>
+        <div class="card-fan card-back"><div class="mini-sun"></div></div>
+        <div class="card-fan card-front">
+          <div class="card-top"><span>PIKAIOU</span><b>120</b></div>
+          <div class="card-picture">
+            <div class="sun"></div>
+            <div class="pikaiou-head"><span class="ear ear-left"></span><span class="ear ear-right"></span><span class="eye eye-left"></span><span class="eye eye-right"></span><span class="cheek cheek-left"></span><span class="cheek cheek-right"></span><span class="nose"></span></div>
+          </div>
+          <div class="card-bottom"><span>Foudre sauvage</span><b>⚡ 30</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="collection" id="collection">
+      <div class="section-heading">
+        <div><p class="eyebrow">LA COLLECTION</p><h2>Nos cartes vedettes</h2></div>
+        <div class="filters" role="group" aria-label="Filtrer les cartes">
+          <button class="filter active" data-filter="all">Tout</button>
+          <button class="filter" data-filter="rare">Rare</button>
+          <button class="filter" data-filter="edition">Édition limitée</button>
+        </div>
+      </div>
+
+      <div class="product-grid">
+        <article class="product" data-category="edition">
+          <div class="product-image yellow">
+            <span class="badge">ÉDITION LIMITÉE</span>
+            <div class="product-card card-a"><div class="pc-name">PIKAIOU <b>120</b></div><div class="pc-art"><span class="pc-bolt">⚡</span></div><div class="pc-copy">Éclair tourbillon</div></div>
+          </div>
+          <div class="product-info"><div><p class="type">Électrique · #001</p><h3>Pikaiou Volt</h3></div><strong>14,90 €</strong></div>
+          <button class="add-button" data-id="volt" data-name="Pikaiou Volt" data-price="14.90">Ajouter au panier <span>+</span></button>
+        </article>
+
+        <article class="product" data-category="rare">
+          <div class="product-image pink">
+            <span class="badge dark">RARE</span>
+            <div class="product-card card-b"><div class="pc-name">NÉBULIOU <b>180</b></div><div class="pc-art neb"><span>✦</span></div><div class="pc-copy">Étoile danseuse</div></div>
+          </div>
+          <div class="product-info"><div><p class="type">Cosmique · #002</p><h3>Nébuliou Stellaire</h3></div><strong>19,90 €</strong></div>
+          <button class="add-button" data-id="nebula" data-name="Nébuliou Stellaire" data-price="19.90">Ajouter au panier <span>+</span></button>
+        </article>
+
+        <article class="product" data-category="edition">
+          <div class="product-image blue">
+            <span class="badge">ÉDITION LIMITÉE</span>
+            <div class="product-card card-c"><div class="pc-name">GLACIOU <b>150</b></div><div class="pc-art ice"><span>❄</span></div><div class="pc-copy">Gel éclatant</div></div>
+          </div>
+          <div class="product-info"><div><p class="type">Glace · #003</p><h3>Glaciou Polaire</h3></div><strong>16,90 €</strong></div>
+          <button class="add-button" data-id="glace" data-name="Glaciou Polaire" data-price="16.90">Ajouter au panier <span>+</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="story" id="histoire">
+      <div class="story-icon">⚡</div>
+      <div><p class="eyebrow">NOTRE UNIVERS</p><h2>Chaque carte raconte une étincelle.</h2></div>
+      <p>Illustrées avec passion et produites en petits nombres, les cartes Pikaiou sont faites pour être offertes, échangées ou conservées.</p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#"><span class="brand-mark"><span>⚡</span></span><span><strong>PIKAIOU</strong><small>CARDS</small></span></a>
+    <p>© 2026 Pikaiou Cards</p>
+    <div><a href="mailto:hello@pikaioucards.fr">Contact</a><a href="#">Livraison & retours</a></div>
+  </footer>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-head"><h2>Votre panier</h2><button id="closeCart" aria-label="Fermer">×</button></div>
+    <div class="cart-items" id="cartItems"><p class="empty">Votre panier est vide.</p></div>
+    <div class="cart-footer">
+      <div class="total"><span>Total</span><strong id="cartTotal">0,00 €</strong></div>
+      <button class="checkout" id="checkoutButton">Payer en ligne <span>→</span></button>
+      <p>Paiement sécurisé par carte</p>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <dialog id="paymentDialog">
+    <button class="dialog-close" id="dialogClose">×</button>
+    <div class="dialog-icon">🔒</div>
+    <h2>Paiement en ligne</h2>
+    <p>Pour activer les paiements, ajoutez votre lien Stripe Payment Link dans <code>script.js</code>. Les fonds seront ensuite versés sur votre compte bancaire.</p>
+    <button class="primary-button" id="dialogOk">J’ai compris</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
